@@ -30,6 +30,46 @@ let userScore = 0;
 // PLAY A SINGLE ROUND.
 // Check if computer and player choices are the same.
 // Check player choice and compare to each possible computer choice.
+function playRound(userChoice, computerChoice){
+    if (userChoice === computerChoice) {
+        console.log("The game is a tie!");
+    }
+    else if (userChoice === "ROCK") {
+        if (computerChoice === "SCISSORS") {
+            console.log(`You win! ${userChoice} beats ${computerChoice}!`);
+            userScore += 1;
+        }
+        else {
+            console.log(`You lost! ${userChoice} loses to ${computerChoice}.`);
+            computerScore += 1;
+        }
+    }
+    else if (userChoice === "PAPER") {
+        if (computerChoice === "ROCK") {
+            console.log(`You win! ${userChoice} beats ${computerChoice}!`);
+            userScore += 1;
+        }
+        else {
+            console.log(`You lost! ${userChoice} loses to ${computerChoice}.`);
+            computerScore += 1;
+        }
+    }
+    else if (userChoice === "SCISSORS") {
+        if (computerChoice === "PAPER") {
+            console.log(`You win! ${userChoice} beats ${computerChoice}!`);
+            userScore += 1;
+        }
+        else {
+            console.log(`You lost! ${userChoice} loses to ${computerChoice}.`);
+            computerScore += 1;
+        }
+    }
+}
+
+const userSelection = getUserChoice();
+const computerSelection = getComputerChoice();
+
+playRound(userSelection, computerSelection);
 
 // PLAY ENTIRE GAME (5 ROUNDS).
 // Display current round results.
