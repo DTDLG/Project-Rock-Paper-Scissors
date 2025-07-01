@@ -82,8 +82,7 @@ function playGame() {
         computerSelection = getComputerChoice();
         userSelection = getUserChoice();
         playRound(userSelection, computerSelection);
-        console.log(`The current score is: user (${userScore}) vs. computer 
-            (${computerScore})`);
+        console.log(`The current score is: user (${userScore}) vs. computer (${computerScore})`);
         i++;
     }
 }
