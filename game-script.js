@@ -33,6 +33,8 @@ let userScore = 0;
 function playRound(userChoice, computerChoice){
     if (userChoice === computerChoice) {
         console.log("The game is a tie!");
+        userScore += 1;
+        computerScore =+ 1;
     }
     else if (userChoice === "ROCK") {
         if (computerChoice === "SCISSORS") {
