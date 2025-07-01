@@ -66,8 +66,8 @@ function playRound(userChoice, computerChoice){
     }
 }
 
-let userSelection
-let computerSelection
+let userSelection;
+let computerSelection;
 let i = 1;
 // PLAY ENTIRE GAME (5 ROUNDS).
 // Display current round results.
