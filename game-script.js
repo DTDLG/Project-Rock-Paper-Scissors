@@ -1,5 +1,6 @@
 // Rock, Paper, Scissors game logic.
 let computerChoice;
+let userChoice;
 // GET COMPUTER CHOICE
 // Generate a random choice of rock, paper or scissors
 function getComputerChoice(computerChoice) {
@@ -17,6 +18,10 @@ function getComputerChoice(computerChoice) {
 
 // GET USER CHOICE.
 // Ask for user input to get either rock, paper or scissors
+function getUserChoice(userChoice) {
+    userChoice = prompt("Rock, paper or scissors?");
+    return userChoice.toUpperCase();
+}
 
 // DECLARE PLAYER SCORE VARIABLES.
 
