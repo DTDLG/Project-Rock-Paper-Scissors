@@ -5,7 +5,7 @@ let userChoice;
 // Generate a random choice of rock, paper or scissors
 function getComputerChoice(computerChoice) {
     let numberGenerator = Math.floor(Math.random() * 100) + 1;
-    if (numberGenerator <= 30) {å
+    if (numberGenerator <= 30) {
         return "ROCK";
     }
     else if (numberGenerator >= 61) {
