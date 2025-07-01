@@ -66,13 +66,23 @@ function playRound(userChoice, computerChoice){
     }
 }
 
-const userSelection = getUserChoice();
-const computerSelection = getComputerChoice();
-
-playRound(userSelection, computerSelection);
-
+let userSelection
+let computerSelection
+let i = 1;
 // PLAY ENTIRE GAME (5 ROUNDS).
 // Display current round results.
 // Display total results.
 // Start new round and get user and computer's choice.
 // Repeat for a total of 5 rounds.
+function playGame() {
+    while (i <= 5) {
+        console.log(`Round ${i}`);
+        computerSelection = getComputerChoice();
+        userSelection = getUserChoice();
+        playRound(userSelection, computerSelection);
+        console.log(`The current score is: user (${userScore}) vs. computer (${computerScore})`);
+        i++;
+    }
+}
+
+playGame();
