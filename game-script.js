@@ -25,7 +25,7 @@ function getUserChoice(userChoice) {
 
 // DECLARE PLAYER SCORE VARIABLES.
 let computerScore = 0;
-let humanScore = 0;
+let userScore = 0;
 
 // PLAY A SINGLE ROUND.
 // Check if computer and player choices are the same.
